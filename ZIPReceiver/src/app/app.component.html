@@ -1,0 +1,24 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<body>
+<div class="container">
+  <div class="row transparent">
+    <div class="col-md-12">
+      <div class="tuyin first">	
+        <span class="title">RECEIVER</span>
+        <div class="plan-name">Click the button to receive the file from the server.</div><br>
+        <button class="button" (click) ="sendHi()"><span>Receive File</span></button><br><br>
+        <div class="plan-name">File Name: {{serverData[0]}}</div>
+        <div class="plan-name">Decompression Time: {{serverData[1]}} ms</div>
+        <div class="plan-name">Compression Technique: {{serverData[2]}}</div>
+      </div>
+    </div>
+  </div>
+</div>    
+</body>

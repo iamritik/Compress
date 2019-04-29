@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<body>
+<div class="container">
+  <div class="row transparent">
+    <div class="col-md-12">
+      <div class="tuyin first"> 
+        <span class="title">SENDER</span>
+        <div class="plan-name">Click the button to host the file.</div><br>
+        <span class="btn btn-primary btn-file" >
+          Browse <input type="file" #file>
+      </span><br><br>
+        <label class="switch">
+        <input type="checkbox" value="Bz2" (click)="sendp()" [checked]="flag1" #f1>
+       <span class="slider round" ></span>
+        </label>
+        <span class="abc2"> using Bz2</span>
+        <br>
+        <br>
+        <br>
+        <label class="switch">
+         <br><input type="checkbox" (click)="sendp2()" [checked]="flag2" value="Gzip"  #f2>
+        <span class="slider round" ></span>
+        </label>
+        <span class="abc2"> using Gzip</span>
+        <br><br><br>
+        <button class="button" (click) ="sendHi(file.value)"><span>SEND FILE</span></button><br><br>
+        <br><div class="plan-name">File Name:{{serverData[0]}}</div>
+        <div class="plan-name">Compression Time: {{serverData[1]}} ms</div>
+      </div>
+    </div>
+  </div>
+</div>    
+</body>
+
+<router-outlet></router-outlet>
